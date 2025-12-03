@@ -1,7 +1,4 @@
 from llama_cloud_services import LlamaParse
-from dotenv import load_dotenv
-
-load_dotenv(override=True)
 
 parser = LlamaParse(
     num_workers=4,
