@@ -21,7 +21,7 @@ class Rules(BaseModel):
     rules: list[Rule] = Field(description="List of extracted rules")
 
 
-def get_rules_schema(markdown_content: str) -> list[Rule]:
+def extract_rules(markdown_content: str) -> list[Rule]:
     llm = OpenAI(model="gpt-5.1")
     prompt = PromptTemplate(template_string)
 
